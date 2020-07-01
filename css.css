@@ -1,0 +1,77 @@
+body{
+    font-family: sans-serif;
+}
+
+/* ESTILOS GENERALES -------------------- */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    line-height: 3rem;
+    position: relative;
+}
+
+nav li ul {
+    position: absolute;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 0 2.5em;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    background: black;
+}
+
+nav li ul {
+    display: none;
+}
+
+nav li:hover > ul {
+    display: block;
+}
+
+
+/* PRIMER NIVEL ------------------------- */ 
+
+
+
+nav > ul {
+    background: yellowgreen;
+    display: table;
+    width: 100%;
+}
+
+
+nav > ul > li { 
+    float: left; /* Atento aqui */
+}
+ 
+
+
+/* SEGUNDO NIVEL ------------------------- */
+
+
+nav li li {
+    background: blue;
+    width: 200px;
+}
+
+nav > ul > li > ul {
+    top: 100%;
+}
+
+
+/* TERCER NIVEL -------------------------- */
+
+nav ul ul ul {
+    left: 100%;
+    top: 0;
+}
